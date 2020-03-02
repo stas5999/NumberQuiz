@@ -11,17 +11,14 @@ namespace NumberQuiz
         static void Main(string[] args)
         {
             Console.WriteLine("Введите число n и m");
-            int n;
-            n = Convert.ToInt32(Console.ReadLine());
+            int n = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
-            int m;
-            m = Convert.ToInt32(Console.ReadLine());
+            int m = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
             Random rnd = new Random();
             int e = rnd.Next(n,m);
             Console.WriteLine("Отгадай число");
-            int x;
-            x= Convert.ToInt32(Console.ReadLine());
+            int x= Convert.ToInt32(Console.ReadLine());
             if (x!=e)
             {
                 Console.WriteLine("Вы не угадали число");
